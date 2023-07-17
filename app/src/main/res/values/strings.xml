@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Galeria De Arte</string>
+    <string name="button_1">Anterior</string>
+    <string name="button_2">Próximo</string>
+    <string name="title_art">Título</string>
+    <string name="artist_name">Nome do artista (Ano)</string>
 </resources>

@@ -1,7 +1,6 @@
 package com.example.galeriadearte
 
 import android.os.Bundle
-import android.widget.Space
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -21,6 +20,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -77,11 +77,11 @@ fun ImageDescription(){
             .padding(10.dp)
     ) {
         Text(
-            text = "Título",
+            text = stringResource(id = R.string.title_art),
             fontWeight = FontWeight.Bold,
             fontSize = 18.sp
         )
-        Text(text = "Nome (Ano)")
+        Text(text = stringResource(id = R.string.artist_name))
     }
 }
 
@@ -95,14 +95,14 @@ fun ArtButtons(){
             onClick = { /*TODO*/ },
             modifier = Modifier.size(width = 150.dp, height = 50.dp)
         ) {
-            Text(text = "Anterior")
+            Text(text = stringResource(id = R.string.button_1))
         }
         Spacer(modifier = Modifier.padding(8.dp))
         Button(
             onClick = { /*TODO*/ },
             modifier = Modifier.size(width = 150.dp, height = 50.dp)
         ) {
-            Text(text = "Próximo")
+            Text(text = stringResource(id = R.string.button_2))
         }
     }
 }
